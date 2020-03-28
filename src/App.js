@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import LightContainer from "./Components/LightContainer";
+import CounterContainer from "./Components/CounterContainer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <div> hello</div>
+        <LightContainer />
+        <CounterContainer />
+      </div>
+    );
+  }
 }
 
 export default App;
